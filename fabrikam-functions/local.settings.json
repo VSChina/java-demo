@@ -1,0 +1,8 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "UserStorage": "DefaultEndpointsProtocol=https;AccountName=demo4java;AccountKey=BswnPLvAOGLsubUGM3PwlRdrWdM6AydDjSW5W0dIfzcuypGjfAqTXi38ZGFJvvXj2d+syMZhm7Ou16KCdKV7tA==;EndpointSuffix=core.windows.net",
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=demo4java;AccountKey=BswnPLvAOGLsubUGM3PwlRdrWdM6AydDjSW5W0dIfzcuypGjfAqTXi38ZGFJvvXj2d+syMZhm7Ou16KCdKV7tA==;EndpointSuffix=core.windows.net",
+    "AzureWebJobsDashboard": ""
+  }
+}

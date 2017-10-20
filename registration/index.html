@@ -1,0 +1,19 @@
+<html>
+
+<head>
+    <script>
+        var httpRequest = new XMLHttpRequest();
+        httpRequest.open("GET", "https://fabrikam-functions-java-demo.azurewebsites.net/api/hello?ua=" + window.navigator.userAgent, true);
+        httpRequest.send();
+    </script>
+</head>
+
+<body>
+
+    <div id="demo">
+        签到成功！
+    </div>
+
+</body>
+
+</html>
