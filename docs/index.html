@@ -3,15 +3,21 @@
 <head>
     <script>
         var httpRequest = new XMLHttpRequest();
-        httpRequest.open("GET", "https://fabrikam-functions-java-demo.azurewebsites.net/api/hello?ua=" + window.navigator.userAgent, true);
+        httpRequest.open("GET", "https://fabrikam-functions-java-demo.azurewebsites.net/api/hello?ua=" + window.navigator
+            .userAgent, true);
         httpRequest.send();
     </script>
+    <style>
+        #demo {
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
 
     <div id="demo">
-        签到成功！
+        <h1>签到成功！</h1>
     </div>
 
 </body>
