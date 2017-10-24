@@ -1,6 +1,6 @@
 $.ajax({
         method: "GET",
-        url: "https://fabrikam-functions-java-demo.azurewebsites.net/api/hello?ua=" + window.navigator.userAgent,
+        url: "https://fabrikam-functions-java-demo.azurewebsites.net/api/register?ua=" + window.navigator.userAgent,
     })
     .done(function () {
         $("#result").text("签到成功！");

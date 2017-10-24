@@ -7,11 +7,11 @@ import com.microsoft.azure.serverless.functions.annotation.*;
 import com.microsoft.azure.serverless.functions.ExecutionContext;
 
 /**
- * Hello function with HTTP Trigger.
+ * "register" function with HTTP Trigger.
  */
 public class Function {
-    @FunctionName("hello")
-    public HttpResponseMessage hello(
+    @FunctionName("register")
+    public HttpResponseMessage register(
         @HttpTrigger(name = "req", methods = { "get", "post" }, authLevel = AuthorizationLevel.ANONYMOUS) HttpRequestMessage req,
         @TableOutput(name = "user", connection = "UserStorage", tableName = "user", partitionKey = "JavaDemo") OutputBinding<UserEntry> newEntry,
         ExecutionContext context) {
