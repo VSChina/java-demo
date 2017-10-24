@@ -11,21 +11,23 @@ import com.microsoft.azure.serverless.functions.ExecutionContext;
  */
 public class Function {
     @FunctionName("hello")
-    public String hello(
+    public HttpResponseMessage hello(
         @HttpTrigger(name = "req", methods = { "get", "post" }, authLevel = AuthorizationLevel.ANONYMOUS) HttpRequestMessage req,
         @TableOutput(name = "user", connection = "UserStorage", tableName = "user", partitionKey = "JavaDemo") OutputBinding<UserEntry> newEntry,
         ExecutionContext context) {
-        
-        Object a = req.getHeaders();
-        
+              
         String ua = req.getQueryParameters().get("ua");
 
         System.out.println(ua);
 
-        UserEntry newUser = new UserEntry(ua);
-        newEntry.setValue(newUser);
-
-        return "ok";
+        if (ua == null) {
+            return req.createResponse(400, "Please pass a User-Agent string on the query string");
+        } else {
+            UserEntry newUser = new UserEntry(ua);
+            newEntry.setValue(newUser);
+    
+            return req.createResponse(200, "ok");
+        }
     }
 }
 
