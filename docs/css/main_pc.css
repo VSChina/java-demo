@@ -1,25 +1,27 @@
 body {
-    background-image: url("../images/background@3x.png");
-    background-size: cover;
+    background-image: url("../images/background_pc.png");
+    background-size: 100% 100%;
 }
 
 #title {
-    margin: 40% auto 20px;
-    width: 80%;
+    margin: 5% auto 20px;
+    max-width: 65%;
 }
 
 #title-img {
+    margin: auto;
+    display: block;
     height: auto;
     max-width: 100%;
 }
 
 #result {
-    margin-top: 15%;
+    margin-top: 5%;
     text-align: center;
 }
 
 #result-text {
-    font-size: 100%;
+    font-size: 200%;
     font-weight: bold;
     color: #0f165c;
 }
@@ -35,6 +37,7 @@ body {
 }
 
 #try-img {
+    margin: auto;
     display: none;
     height: auto;
     max-width: 100%;
